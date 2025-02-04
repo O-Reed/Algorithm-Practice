@@ -6,12 +6,14 @@
 
 
 function reverse(str) {
-    let reversed = '';
+    // let reversed = '';
 
-    for (let char of str)
-        reversed = char + reversed;
+    // for (let char of str)
+    //     reversed = char + reversed;
 
-    return reversed;
+    // return reversed;
+
+    return str.split('').reverse().join('');
 }
 
 console.log(reverse('hi'));
