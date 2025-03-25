@@ -1,0 +1,40 @@
+You are given two sorted arrays arr and arr of lengths m and n respectively, and an 
+integer x. Your task is to find the pair of elements (arrf, arr20) such that the absolute
+ difference between their sum and x is minimum.
+Write a function or program to solve this problem efficiently.
+Input:
+The input consists of four parts:
+The first line contains two integers m and n (1 ≤ m, n≤ 1045), representing the lengths of 
+arrays arr and arr2 respectively.
+The second line contains m space-separated integers, representing the elements of the 
+sorted array arri
+The third line contains n space-separated integers, representing the elements of the 
+sorted array arr2.
+The fourth line contains an integer x (-10^9 ≤ x ≤ 10^9), denoting the target sum.
+Output:
+Output two integers i and j, representing the indices of the pair (arr1[i], arr2[j]) 
+such that the absolute difference between their sum and x is minimum. If there are 
+multiple pairs with the same minimum absolute difference, output the pair with the 
+smallest value of i and j.
+Example:
+Sample Input:
+3 4
+6 7 9
+4 5 6 8
+16
+Output:
+The closest pair is [7, 8]
+Sample Input:
+4 4
+1 4 5 7
+10 20 30 40
+50
+Output:
+The closest pair is [7, 40]
+In the given example, the arrays arr and arr2 are [6, 7, 9] and [4, 5, 6, 8]
+respectively. The target sum x is 16. The pair (arr1[1], arr2[3]) = (7, 8) 
+has the sum 7 + 8 = 15, which is closest to x = 16 among all pairs.
+Note:
+Both arrays arr1 and arr are sorted in ascending order.
+The absolute difference between the sum of elements of any pair (arr1[i], arr2[j]) 
+and x should be minimized.
